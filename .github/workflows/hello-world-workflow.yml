@@ -8,4 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello World"
+      - uses: actions/checkout@v3
       - uses: ./.github/actions/hello-world-action
