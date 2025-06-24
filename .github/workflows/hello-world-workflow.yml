@@ -3,7 +3,7 @@ name: Hello World
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on:
   schedule:
-    - cron: '00 9 * * *'  
+    - cron: '00 13 * * *'  
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
