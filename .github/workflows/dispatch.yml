@@ -1,0 +1,12 @@
+name: Test Dispatch Action
+on:
+  workflow_dispatch:
+jobs:
+  this-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone to runner
+      - uses: actions/checkout@v3
+
+      - name: run hi
+      - run: ./scripts/hi.sh
