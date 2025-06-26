@@ -5,7 +5,7 @@ on:
 
 jobs:
   call_greetings:
-    uses: ./greetings.yml
+    uses: ./.github/workflows/greetings.yml
     with:
       input_name: "Ben"
       english: true
