@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: run hi
-      - run: ./scripts/hi.sh
+      - run: bash ./scripts/hi.sh
