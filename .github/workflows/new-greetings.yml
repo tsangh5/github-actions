@@ -11,5 +11,5 @@ jobs:
       english: true
   print:
     runs-on: ubuntu-latest
-      steps:
-        - run: echo "Goodbye"
+    steps:
+      - run: echo "Goodbye"
