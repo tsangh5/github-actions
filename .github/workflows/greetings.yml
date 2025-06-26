@@ -1,7 +1,7 @@
 name: Greetings
 
 on:
-  workflow_dispatch:
+  workflow_call:
     inputs:
       input_name:
         description: 'name'
