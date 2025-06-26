@@ -1,0 +1,29 @@
+name: Greetings
+
+on:
+  workflow_dispatch:
+    inputs:
+      input_name:
+        description: 'name'
+        required: true
+        default: 'none'
+        type: string
+      english:
+        description: 'english?'
+        required: true
+        default: true
+        type: boolean
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check language
+        run: |
+          if [[ "$ENGLISH" == "true" ]]; then
+            echo "Hello, I'm $INPUT_NAME"
+          else
+            echo "Bonjour! Moi, c'est $INPUT_NAME"
+          fi
+        env:
+            INPUT_NAME: ${{ inputs.input_name }}
+            ENGLISH: ${{ inputs.english }}
