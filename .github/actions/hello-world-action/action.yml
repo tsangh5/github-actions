@@ -1,11 +1,6 @@
-name: Hello World Action
-on:
-  push:
-    branches:
-      - main
-jobs:
-  merge-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: print hello world to summary
-        run: echo "Hello World" >> $GITHUB_STEP_SUMMARY
+name: "Hello World"
+description: "Prints hello world to the step summary"
+runs:
+  using: "composite"
+  steps:
+    - run: echo "Hello World" >> $GITHUB_STEP_SUMMARY
