@@ -1,0 +1,11 @@
+name: Greetings + Response
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call_greetings:
+    uses: ./greetings.yml
+    with:
+      input_name: "Ben"
+      english: true
