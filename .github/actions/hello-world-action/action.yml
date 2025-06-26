@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print hello world to summary
-      - run: echo "Hello World" >> $GITHUB_STEP_SUMMARY
+        run: echo "Hello World" >> $GITHUB_STEP_SUMMARY
